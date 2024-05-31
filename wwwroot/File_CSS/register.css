@@ -1,0 +1,121 @@
+:root{
+    font-size: 25px;
+}
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    /* padding-bottom: 5vw; */
+}
+section{
+    /* padding: 10rem; */
+    padding-bottom: 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.login-container{
+    padding: 0.8rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.login-container h4{
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+.form-container{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+.form-container form{
+    width: 100%;
+}
+.input-field{
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    column-gap: 1vw;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.input-field-2{
+    grid-template-columns: 1fr 2fr;
+    border: 2px solid blue;
+}
+.input-field-2 > div{
+    padding: 0.5vw 0;
+    grid-column-start: 2;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.input-field-flex{
+    width: 30vw;
+    padding: 0.5vw 0;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+.input-field-flex > div{
+    margin-right: 0.5vw;
+}
+.input-field > *:first-child{
+    text-align:right;
+}
+.input-field button{
+    border: none;
+    background-color: rgb(52, 86, 255);
+    color: white;
+    padding: 0.5vw 0.8vw;
+    border-radius: 5px;
+}
+input[type="text"], input[type="password"]{
+    width: 110%;
+    border: 1px solid gray;
+    padding: 0.3vw;
+    border-radius: 5px;
+}
+@media (max-width: 600px){
+    body{
+        padding-bottom: 4rem;
+    }
+    .login-container{
+        padding: 1.5vw;
+        width: 80vw;
+    }
+    .login-container h4{
+        font-size: 0.7rem;
+        margin-bottom: 0.3rem;
+    }
+    .input-field{
+        font-size: 0.6rem;
+        column-gap: 0.5rem;
+    }
+    .input-field-flex{
+        width: 40vw;
+        padding: 0.3rem;
+    }
+    .input-field-flex > div {
+        margin-right: 0.3rem;
+    }
+    .input-field button{
+        padding: 0.9vw 1.2vw;
+        border-radius: 5px;
+        font-size: 0.6rem;
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WearHouse Category</title>
+    <link rel="stylesheet" href="../File_CSS/header.css">
+    <link rel="stylesheet" href="../File_CSS/footer.css">
+    <link rel="stylesheet" href="../File_CSS/Category.css">
+    <script src="../File_JS/site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="dashBoard.html" id="logo">WearHouse</a>
+            </div>
+            <div id="nav-bar-container">
+                <div>
+                    <a href="Category.HTML">Category</a>
+                    <a href="AboutUs.HTML">About Us</a>
+                </div>
+                <div>
+                    <a id="UserBox"></a>
+                </div>
+            </div>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <main>
+            <h1>Product Categories</h1>
+            <div class="content-container">
+                <div>
+                    <button id="addButton">Add Category</button>
+                </div>
+                <div id="category">
+                    <div class="content">
+                        <p>No.</p>
+                        <p>Category</p>
+                        <p>Admin</p>
+                    </div>
+                    <!-- <div class="content category-container">
+                    <p>1</p>
+                    <p>Shoes</p>
+                    <div>
+                        <button onclick="editCategory(123)" id="editButton">Edit</button>
+                        <button onclick="deleteCategory(123)" id="deleteButton">Delete</button>
+                    </div>
+                    </div> -->
+                    <div class="popUpContainer addContainer" id="add-container">
+                        <div id="popUp-header">
+                            <h4>Add Category</h4>
+                            <button class="closeButton" onclick="closePopUp">X</button>
+                        </div>
+                        <div id="popUp-body">
+                            <h4>Category</h4>
+                            <input type="text" id="addCategoryBox" class="addCategoryBox">
+                        </div>
+                        <div id="popUp-submit">
+                            <button id="addSubmitButton" class="submitButton" onclick="addCategory(); closePopUp();">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="popUpContainer editContainer" id="edit-container">
+                        <div id="popUp-header">
+                            <h4>Edit Category</h4>
+                            <button class="closeButton" onclick="closePopUp()">X</button>
+                        </div>
+                        <div id="popUp-body">
+                            <h4>Category</h4>
+                            <input type="text" id="editCategoryBox" class="editCategoryBox">
+                        </div>
+                        <div id="popUp-submit">
+                            <button id="editSubmitButton" class="submitButton" onclick="editCategory()">Submit</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="popUpContainer deleteContainer" id="delete-container">
+                        <div id="popUp-header">
+                            <h4>Delete Category</h4>
+                            <button class="closeButton" onclick="closePopUp()">X</button>
+                        </div>
+                        <div id="popUp-body">
+                            <h4>This action is irreversible! Are you sure you want to delete this category?</h4>
+                        </div>
+                        <div id="popUp-submit">
+                            <button id="deleteSubmitButton" class="submitButton" onclick="deleteCategory()">Delete</button>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <div>
+            <a href="https://twitter.com/" target="_blank"><img src="../Asset/twitter-icon.png" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../Asset/facebook-icon.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../Asset/instagram-icon.png" alt=""></a>
+        </div>
+        <h4>
+            Copyright &copy; 2023 jonathanCalvinSutrisna. All Register Reserved
+        </h4>
+    </footer>
+    <script src="../File_JS/header.js"></script>
+    <script src="../File_JS/Category.js"></script>
+</body>
+</html>

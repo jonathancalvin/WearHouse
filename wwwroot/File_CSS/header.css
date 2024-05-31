@@ -1,0 +1,114 @@
+:root{
+    font-size: 25px;
+}
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;
+}
+header{
+    background-color: white;
+    height: 80px;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    /* padding-bottom: 6vw; */
+}
+nav{
+    padding: 1vw;
+    display: flex;
+    align-items: baseline;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo-container{
+    flex:1;
+    padding: 0.5rem;
+}
+#logo{
+    font-weight:550;
+    font-size: 1rem;
+}
+#nav-bar-container{
+    flex:12;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+#nav-bar-container div{
+    /* border: 1px solid black; */
+    padding: 0.5rem 0rem;
+}
+#nav-bar-container div a{
+    margin-right: 1rem;
+    font-weight: 400;
+}
+.hamburger-menu {
+    display: none;
+}
+@media (max-width: 600px){
+    #logo{
+        font-size: 0.9rem;
+    }
+    nav{
+        flex-flow: column wrap;
+        background-color: white;
+    }
+    .nav-bar-container{
+        font-size: 0.5rem;
+    }
+    .logo-container{
+        flex:1;
+        padding: 0.5rem 1rem;
+    }
+    .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        /* background-color: black; */
+        height: 45px;
+        width: 60px;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        border: 1px solid gray;
+        border-radius: 7px;
+        padding: 0.3rem;
+    }
+    .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: gray;
+        border-radius: 2px;
+    }
+    #logo{
+        font-size: 30px;
+    }
+    #nav-bar-container{
+        display: none;
+        flex-direction: column;
+    }
+    #nav-bar-container div{
+        padding: 0;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-bar-container div a{
+        margin-bottom: 1rem;
+    }
+    #nav-bar-container.active{
+        display: flex;
+    }
+
+}

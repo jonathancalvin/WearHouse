@@ -1,0 +1,81 @@
+:root{
+    font-size: 25px;
+}
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+}
+section{
+    /* padding: 10rem; */
+    padding-bottom: 6rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: violet; */
+}
+main{
+    border: 1px solid black;
+    padding:0.5rem;
+    width: 48vw;
+    /* width: 30rem; */
+    background-color: rgb(238, 238, 238);
+    /* display: grid;
+    grid-template-rows: 1fr 2fr; */
+    /* display: flex;
+    flex-direction: column; */
+}
+main h2, h3, h1{
+    font-weight: lighter;
+}
+main h1{
+    /* border: 1px solid red; */
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.content{
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.5vw;
+}
+.content div:first-child{
+    margin-bottom: 0.5rem;
+    font-size: 0.6rem;
+}
+.content div:last-child > *{
+    margin-bottom: 0.25rem;
+    font-size: 0.6rem;
+}
+.content div:last-child h2{
+    font-size: 1rem;
+}
+@media (max-width: 600px){
+    main{
+        width: 90vw;
+    }
+    main h1{
+        font-size: 1.5rem;
+    }
+    .content{
+        padding: 1rem;
+    }
+    .content div:first-child{
+        margin-bottom: 0.7rem;
+        font-size: 0.8rem;
+    }
+    .content div:last-child > *{
+        margin-bottom: 0.45rem;
+        font-size: 0.8rem;
+    }
+    .content div:last-child h2{
+        font-size: 1.2rem;
+    }
+}

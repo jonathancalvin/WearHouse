@@ -1,0 +1,178 @@
+﻿:root {
+    font-size: 25px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #000;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+section {
+    /* padding: 10rem; */
+    padding-bottom: 6rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: violet; */
+}
+
+main {
+    padding: 0.5rem;
+    width: 48vw;
+    /* width: 30rem; */
+    background-color: rgb(238, 238, 238);
+    /* display: grid;
+    grid-template-rows: 1fr 2fr; */
+    /* display: flex;
+    flex-direction: column; */
+}
+
+main h1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.content-container > div:last-child {
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.content {
+    background-color: white;
+    /* padding: 1.5vw; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+.content p {
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+.category-container p {
+    font-weight: lighter;
+    font-size: 0.6rem;
+}
+
+#addButton, .editButton, .deleteButton, .submitButton {
+    border: none;
+    background-color: rgb(52, 86, 255);
+    color: white;
+    padding: 0.3rem;
+    font-size: 0.4rem;
+    font-weight: lighter;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editButton {
+    font-size: 0.5rem;
+    background-color: rgb(224, 191, 26);
+}
+
+.deleteButton {
+    font-size: 0.5rem;
+    background-color: red;
+}
+
+#addButton {
+    margin-bottom: 0.2rem;
+}
+
+.popUpContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+    width: 15rem;
+    padding: 1rem;
+}
+
+    .popUpContainer.active {
+        transform: translate(-50%,-50%) scale(1);
+    }
+
+#popUp-header {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+    #popUp-header h4 {
+        font-size: 0.6rem;
+        font-weight: lighter;
+    }
+
+.closeButton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 0.6rem;
+    font-weight: lighter;
+    z-index: 999;
+}
+
+#popUp-body {
+    padding: 0.5rem;
+}
+
+    #popUp-body h4 {
+        font-size: 0.55rem;
+        font-weight: lighter;
+    }
+
+.submitButton {
+    float: right;
+    background-color: green;
+}
+#deleteSubmitButton{
+    background-color: red;
+}
+    #overlay {
+        position: fixed;
+        opacity: 0;
+        transition: 200ms ease-in-out;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        pointer-events: none;
+    }
+
+    #overlay.active {
+        opacity: 1;
+        pointer-events: all;
+    }
+@media (max-width: 600px) {
+    main {
+        width: 90vw;
+    }
+
+        main h1 {
+            font-size: 1.5rem;
+        }
+
+    .content {
+        padding: 1rem;
+    }
+}

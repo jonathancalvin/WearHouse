@@ -33,7 +33,6 @@ section{
     margin-bottom: 1rem;
 }
 .form-container{
-    border: 2px solid red;
     display: flex;
     justify-content: center;
 }
@@ -52,7 +51,6 @@ section{
 }
 .input-field-2{
     grid-template-columns: 1fr 2fr;
-    border: 2px solid blue;
 }
 .input-field-2 > div{
     padding: 0.5vw 0;

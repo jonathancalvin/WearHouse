@@ -10,8 +10,6 @@ To run this project, you will need to add the following configuration to your ap
 
 `"WHDB": "Server=YOUR_SERVER_NAME;Database=YOUR_DATABASE_NAME;Trusted_Connection=True;Encrypt=False;"`
 
-## Installation
-
 ### Prerequisites
 
 - Visual Studio 2022

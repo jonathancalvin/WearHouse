@@ -22,13 +22,14 @@ To run this project, you will need to add the following configuration to your ap
    ```bash
    git clone https://github.com/jonathancalvin/WearHouse.git
    ```
-2. Open the project in Visual Studio:
-- Go to File -> Open -> Project/Solution
-- Select the .sln / .csproj file in the cloned repository
+2. Open Visual Studio:
+
+- Go to Backend Directory
+- Double Click the Backend.sln
 
 3. Restore NuGet Packages:
 
-   Klik kanan pada solusi dan pilih "Restore NuGet Packages".
+   Right click on solution and chooe "Restore NuGet Packages".
 
 4. Build the Project:
 

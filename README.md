@@ -29,10 +29,13 @@ To run this project, you will need to add the following configuration to your ap
 - Select the .sln / .csproj file in the cloned repository
 
 3. Restore NuGet Packages:
-- Klik kanan pada solusi dan pilih "Restore NuGet Packages".
+
+   Klik kanan pada solusi dan pilih "Restore NuGet Packages".
 
 4. Build the Project:
-- ```Ctrl+Shift+B```
 
-5. Run the Project:
-- ```F5```
+   ```Ctrl+Shift+B```
+
+6. Run the Project:
+
+   ```F5```
